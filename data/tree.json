@@ -1,0 +1,143 @@
+{
+  "roots": [
+    {
+      "key": "z1cgzhp9dn5hy47dl69sgwr",
+      "title": "AI",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "coding-notes",
+      "children": [
+        {
+          "key": "f35m8ieu2pbn12jkz62j3nd",
+          "title": "Background Knowledge",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "coding-notes",
+          "children": []
+        },
+        {
+          "key": "x8jpwbeoqnnfm675507a1iz",
+          "title": "AI Demos",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "coding-notes",
+          "children": []
+        },
+        {
+          "key": "za5or2c8fg13zcu51gxpcqs",
+          "title": "Optimization",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "coding-notes",
+          "children": [
+            {
+              "key": "5bixl6kw3cmj3ec9zuvxi1e",
+              "title": "Hardware",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "coding-notes",
+              "children": [
+                {
+                  "key": "2ka8m9fs91h5ucy4t6hpmt0",
+                  "title": "Cloud Hardware",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "coding-notes",
+                  "children": [
+                    {
+                      "key": "yqa165ncnezvi0iuv6xi193",
+                      "title": "AWS",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "coding-notes",
+                      "children": []
+                    },
+                    {
+                      "key": "3yu0586pmus823xqn7qln9h",
+                      "title": "Azure",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "coding-notes",
+                      "children": []
+                    },
+                    {
+                      "key": "lwczcb6ygp92cmni0hwdzap",
+                      "title": "GCP",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "coding-notes",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "key": "2ek1mpitgig2l85uo2kyida",
+              "title": "Profiling",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "coding-notes",
+              "children": []
+            },
+            {
+              "key": "2cu9kgr61gspzceyaodfek0",
+              "title": "Techniques",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "coding-notes",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "xk249rrm3kfwe5twpc1ouak",
+      "title": "SQL",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "coding-notes",
+      "children": [
+        {
+          "key": "kam10ex48ihweawrhzq1ilw",
+          "title": "MySQL",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "coding-notes",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "child2parent": {
+    "z1cgzhp9dn5hy47dl69sgwr": null,
+    "f35m8ieu2pbn12jkz62j3nd": "z1cgzhp9dn5hy47dl69sgwr",
+    "x8jpwbeoqnnfm675507a1iz": "z1cgzhp9dn5hy47dl69sgwr",
+    "za5or2c8fg13zcu51gxpcqs": "z1cgzhp9dn5hy47dl69sgwr",
+    "5bixl6kw3cmj3ec9zuvxi1e": "za5or2c8fg13zcu51gxpcqs",
+    "2ka8m9fs91h5ucy4t6hpmt0": "5bixl6kw3cmj3ec9zuvxi1e",
+    "yqa165ncnezvi0iuv6xi193": "2ka8m9fs91h5ucy4t6hpmt0",
+    "3yu0586pmus823xqn7qln9h": "2ka8m9fs91h5ucy4t6hpmt0",
+    "lwczcb6ygp92cmni0hwdzap": "2ka8m9fs91h5ucy4t6hpmt0",
+    "2ek1mpitgig2l85uo2kyida": "za5or2c8fg13zcu51gxpcqs",
+    "2cu9kgr61gspzceyaodfek0": "za5or2c8fg13zcu51gxpcqs",
+    "xk249rrm3kfwe5twpc1ouak": null,
+    "kam10ex48ihweawrhzq1ilw": "xk249rrm3kfwe5twpc1ouak"
+  },
+  "notesLabelById": {
+    "z1cgzhp9dn5hy47dl69sgwr": "AI",
+    "f35m8ieu2pbn12jkz62j3nd": "Background Knowledge",
+    "x8jpwbeoqnnfm675507a1iz": "AI Demos",
+    "za5or2c8fg13zcu51gxpcqs": "Optimization",
+    "5bixl6kw3cmj3ec9zuvxi1e": "Hardware",
+    "2ka8m9fs91h5ucy4t6hpmt0": "Cloud Hardware",
+    "yqa165ncnezvi0iuv6xi193": "AWS",
+    "3yu0586pmus823xqn7qln9h": "Azure",
+    "lwczcb6ygp92cmni0hwdzap": "GCP",
+    "2ek1mpitgig2l85uo2kyida": "Profiling",
+    "2cu9kgr61gspzceyaodfek0": "Techniques",
+    "xk249rrm3kfwe5twpc1ouak": "SQL",
+    "kam10ex48ihweawrhzq1ilw": "MySQL"
+  }
+}

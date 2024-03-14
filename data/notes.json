@@ -1,0 +1,567 @@
+{
+  "notes": {
+    "403": {
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "coding-notes"
+      },
+      "fname": "403",
+      "id": "403",
+      "title": "This page has not yet sprouted",
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1710410599676,
+      "created": 1710410599676,
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": null,
+      "data": {}
+    },
+    "9qx3z8b2wfr5chnnb949zv2": {
+      "id": "9qx3z8b2wfr5chnnb949zv2",
+      "title": "Coding Notes",
+      "desc": "Notes on writing, fixing, optimizing, and managing code",
+      "updated": 1710410440247,
+      "created": 1710404034956,
+      "custom": {
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "fname": "root",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "coding-notes"
+      },
+      "contentHash": "3c6023f13c6fc2a4a004216e6bf4bc30",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "z1cgzhp9dn5hy47dl69sgwr",
+        "xk249rrm3kfwe5twpc1ouak"
+      ],
+      "parent": null,
+      "data": {}
+    },
+    "xk249rrm3kfwe5twpc1ouak": {
+      "id": "xk249rrm3kfwe5twpc1ouak",
+      "title": "SQL",
+      "desc": "Notes on various SQL dialects",
+      "updated": 1710410065650,
+      "created": 1710405475476,
+      "custom": {},
+      "fname": "sql",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "coding-notes"
+      },
+      "contentHash": "20b88976560e28d566433564e8d3b404",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "kam10ex48ihweawrhzq1ilw"
+      ],
+      "parent": "9qx3z8b2wfr5chnnb949zv2",
+      "data": {}
+    },
+    "kam10ex48ihweawrhzq1ilw": {
+      "id": "kam10ex48ihweawrhzq1ilw",
+      "title": "MySQL",
+      "desc": "Notes on MySQL SQL syntax",
+      "updated": 1710410059483,
+      "created": 1710410040510,
+      "custom": {},
+      "fname": "sql.mysql",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "coding-notes"
+      },
+      "contentHash": "db1c83b446bc9edbae8c26610bf9de81",
+      "links": [],
+      "anchors": {
+        "section-1-basic-basics-create-and-delete-databases-and-tables-insert-records": {
+          "type": "header",
+          "text": "Section 1: Basic Basics (Create and delete databases and tables, insert records)",
+          "value": "section-1-basic-basics-create-and-delete-databases-and-tables-insert-records",
+          "line": 11,
+          "column": 0,
+          "depth": 2
+        },
+        "section-2-working-with-data-crud-operations": {
+          "type": "header",
+          "text": "Section 2: Working with data (CRUD operations)",
+          "value": "section-2-working-with-data-crud-operations",
+          "line": 165,
+          "column": 0,
+          "depth": 2
+        },
+        "create": {
+          "type": "header",
+          "text": "Create",
+          "value": "create",
+          "line": 169,
+          "column": 0,
+          "depth": 3
+        },
+        "read": {
+          "type": "header",
+          "text": "Read",
+          "value": "read",
+          "line": 194,
+          "column": 0,
+          "depth": 3
+        },
+        "update": {
+          "type": "header",
+          "text": "Update",
+          "value": "update",
+          "line": 233,
+          "column": 0,
+          "depth": 3
+        },
+        "section-3-working-with-string-functions": {
+          "type": "header",
+          "text": "Section 3: Working with string functions",
+          "value": "section-3-working-with-string-functions",
+          "line": 271,
+          "column": 0,
+          "depth": 2
+        },
+        "the-substring-function": {
+          "type": "header",
+          "text": "The SUBSTRING Function",
+          "value": "the-substring-function",
+          "line": 297,
+          "column": 0,
+          "depth": 3
+        },
+        "combining-substring-with-concat": {
+          "type": "header",
+          "text": "Combining SUBSTRING with CONCAT",
+          "value": "combining-substring-with-concat",
+          "line": 325,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "xk249rrm3kfwe5twpc1ouak",
+      "data": {}
+    },
+    "z1cgzhp9dn5hy47dl69sgwr": {
+      "id": "z1cgzhp9dn5hy47dl69sgwr",
+      "title": "AI",
+      "desc": "Notes on AI and ML",
+      "updated": 1710410122585,
+      "created": 1710410115159,
+      "custom": {},
+      "fname": "ai",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "coding-notes"
+      },
+      "contentHash": "7cc96c1f1860de264bdf3961817c063e",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "f35m8ieu2pbn12jkz62j3nd",
+        "x8jpwbeoqnnfm675507a1iz",
+        "za5or2c8fg13zcu51gxpcqs"
+      ],
+      "parent": "9qx3z8b2wfr5chnnb949zv2",
+      "data": {}
+    },
+    "za5or2c8fg13zcu51gxpcqs": {
+      "id": "za5or2c8fg13zcu51gxpcqs",
+      "title": "Optimization",
+      "desc": "",
+      "updated": 1710410215849,
+      "created": 1710410213095,
+      "custom": {},
+      "fname": "ai.optimization",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "coding-notes"
+      },
+      "contentHash": "cd51bf0ca76bc43df94ccf7d82bf67a0",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "5bixl6kw3cmj3ec9zuvxi1e",
+        "2ek1mpitgig2l85uo2kyida",
+        "2cu9kgr61gspzceyaodfek0"
+      ],
+      "parent": "z1cgzhp9dn5hy47dl69sgwr",
+      "data": {}
+    },
+    "2cu9kgr61gspzceyaodfek0": {
+      "id": "2cu9kgr61gspzceyaodfek0",
+      "title": "Techniques",
+      "desc": "",
+      "updated": 1710410490633,
+      "created": 1710410236612,
+      "custom": {},
+      "fname": "ai.optimization.techniques",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "coding-notes"
+      },
+      "contentHash": "4b7816ad777871dbf4e43ca35dfe84d2",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "ai.optimization.techniques",
+            "id": "2cu9kgr61gspzceyaodfek0",
+            "vaultName": "coding-notes"
+          },
+          "value": "ai.optimization.hardware",
+          "alias": "Hardware",
+          "position": {
+            "start": {
+              "line": 2,
+              "column": 29,
+              "offset": 29
+            },
+            "end": {
+              "line": 2,
+              "column": 66,
+              "offset": 66
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "ai.optimization.hardware"
+          }
+        }
+      ],
+      "anchors": {},
+      "children": [],
+      "parent": "za5or2c8fg13zcu51gxpcqs",
+      "data": {}
+    },
+    "2ek1mpitgig2l85uo2kyida": {
+      "id": "2ek1mpitgig2l85uo2kyida",
+      "title": "Profiling",
+      "desc": "",
+      "updated": 1710410256030,
+      "created": 1710410250231,
+      "custom": {},
+      "fname": "ai.optimization.profiling",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "coding-notes"
+      },
+      "contentHash": "75c22c4487d520aabe87360348e6b886",
+      "links": [],
+      "anchors": {
+        "profiling-tools": {
+          "type": "header",
+          "text": "Profiling Tools",
+          "value": "profiling-tools",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "za5or2c8fg13zcu51gxpcqs",
+      "data": {}
+    },
+    "5bixl6kw3cmj3ec9zuvxi1e": {
+      "id": "5bixl6kw3cmj3ec9zuvxi1e",
+      "title": "Hardware",
+      "desc": "",
+      "updated": 1710410272417,
+      "created": 1710410265296,
+      "custom": {},
+      "fname": "ai.optimization.hardware",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "coding-notes"
+      },
+      "contentHash": "87bd0c27c43b7bbc61fe1f6016c1678c",
+      "links": [
+        {
+          "from": {
+            "fname": "ai.optimization.techniques",
+            "id": "2cu9kgr61gspzceyaodfek0",
+            "vaultName": "coding-notes"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 2,
+              "column": 29,
+              "offset": 29
+            },
+            "end": {
+              "line": 2,
+              "column": 66,
+              "offset": 66
+            },
+            "indent": []
+          },
+          "value": "ai.optimization.hardware"
+        }
+      ],
+      "anchors": {
+        "edge": {
+          "type": "header",
+          "text": "Edge",
+          "value": "edge",
+          "line": 57,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [
+        "2ka8m9fs91h5ucy4t6hpmt0"
+      ],
+      "parent": "za5or2c8fg13zcu51gxpcqs",
+      "data": {}
+    },
+    "2ka8m9fs91h5ucy4t6hpmt0": {
+      "id": "2ka8m9fs91h5ucy4t6hpmt0",
+      "title": "Cloud Hardware",
+      "desc": "Cloud-based Hardware for AI applications",
+      "updated": 1710410320794,
+      "created": 1710410300771,
+      "custom": {},
+      "fname": "ai.optimization.hardware.cloud",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "coding-notes"
+      },
+      "contentHash": "15c2c2fce5ec01409de52b12b654b08b",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "yqa165ncnezvi0iuv6xi193",
+        "3yu0586pmus823xqn7qln9h",
+        "lwczcb6ygp92cmni0hwdzap"
+      ],
+      "parent": "5bixl6kw3cmj3ec9zuvxi1e",
+      "data": {}
+    },
+    "lwczcb6ygp92cmni0hwdzap": {
+      "id": "lwczcb6ygp92cmni0hwdzap",
+      "title": "GCP",
+      "desc": "Google Cloud Platform (GCP) hardware options for AI apps",
+      "updated": 1710410418648,
+      "created": 1710410333416,
+      "custom": {},
+      "fname": "ai.optimization.hardware.cloud.gcp",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "coding-notes"
+      },
+      "contentHash": "458d336585314c8a248f622cfd915b9a",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "2ka8m9fs91h5ucy4t6hpmt0",
+      "data": {}
+    },
+    "3yu0586pmus823xqn7qln9h": {
+      "id": "3yu0586pmus823xqn7qln9h",
+      "title": "Azure",
+      "desc": "Azure hardware options for AI apps",
+      "updated": 1710410415423,
+      "created": 1710410339768,
+      "custom": {},
+      "fname": "ai.optimization.hardware.cloud.azure",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "coding-notes"
+      },
+      "contentHash": "328fda32448041eb5c45fa8f9416306b",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "2ka8m9fs91h5ucy4t6hpmt0",
+      "data": {}
+    },
+    "yqa165ncnezvi0iuv6xi193": {
+      "id": "yqa165ncnezvi0iuv6xi193",
+      "title": "AWS",
+      "desc": "AWS hardware options for AI apps",
+      "updated": 1710410388543,
+      "created": 1710410343454,
+      "custom": {},
+      "fname": "ai.optimization.hardware.cloud.aws",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "coding-notes"
+      },
+      "contentHash": "3d56e66414ea51dcc03daf2d358738b8",
+      "links": [],
+      "anchors": {
+        "intel-cpus-x86": {
+          "type": "header",
+          "text": "Intel CPUs (x86)",
+          "value": "intel-cpus-x86",
+          "line": 19,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "2ka8m9fs91h5ucy4t6hpmt0",
+      "data": {}
+    },
+    "x8jpwbeoqnnfm675507a1iz": {
+      "id": "x8jpwbeoqnnfm675507a1iz",
+      "title": "AI Demos",
+      "desc": "AI demo models and demo apps",
+      "updated": 1710410158653,
+      "created": 1710410149704,
+      "custom": {},
+      "fname": "ai.demos",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "coding-notes"
+      },
+      "contentHash": "3870c847ac8aa564a236854bdf7ebea1",
+      "links": [],
+      "anchors": {
+        "demo-apps": {
+          "type": "header",
+          "text": "Demo Apps",
+          "value": "demo-apps",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "z1cgzhp9dn5hy47dl69sgwr",
+      "data": {}
+    },
+    "f35m8ieu2pbn12jkz62j3nd": {
+      "id": "f35m8ieu2pbn12jkz62j3nd",
+      "title": "Background Knowledge",
+      "desc": "AI background knowledge and required reading",
+      "updated": 1710410190484,
+      "created": 1710410179032,
+      "custom": {},
+      "fname": "ai.background",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "coding-notes"
+      },
+      "contentHash": "19d951759e7a2b87f665a86a3c690d2f",
+      "links": [],
+      "anchors": {
+        "background-knowledge": {
+          "type": "header",
+          "text": "Background Knowledge",
+          "value": "background-knowledge",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "z1cgzhp9dn5hy47dl69sgwr",
+      "data": {}
+    }
+  },
+  "domains": [
+    {
+      "id": "9qx3z8b2wfr5chnnb949zv2",
+      "title": "Coding Notes",
+      "desc": "Notes on writing, fixing, optimizing, and managing code",
+      "updated": 1710410440247,
+      "created": 1710404034956,
+      "custom": {
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "fname": "root",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "coding-notes"
+      },
+      "contentHash": "3c6023f13c6fc2a4a004216e6bf4bc30",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "z1cgzhp9dn5hy47dl69sgwr",
+        "xk249rrm3kfwe5twpc1ouak"
+      ],
+      "parent": null,
+      "data": {},
+      "body": "\nWelcome! I keep all my coding notes here. Anything I learn about writing code, testing code, updating code, or optimizing code will go here.\n\nCheck back from time to time for updates. \n"
+    }
+  ],
+  "noteIndex": {
+    "id": "9qx3z8b2wfr5chnnb949zv2",
+    "title": "Coding Notes",
+    "desc": "Notes on writing, fixing, optimizing, and managing code",
+    "updated": 1710410440247,
+    "created": 1710404034956,
+    "custom": {
+      "nav_order": 0,
+      "permalink": "/"
+    },
+    "fname": "root",
+    "type": "note",
+    "vault": {
+      "fsPath": ".",
+      "selfContained": true,
+      "name": "coding-notes"
+    },
+    "contentHash": "3c6023f13c6fc2a4a004216e6bf4bc30",
+    "links": [],
+    "anchors": {},
+    "children": [
+      "z1cgzhp9dn5hy47dl69sgwr",
+      "xk249rrm3kfwe5twpc1ouak"
+    ],
+    "parent": null,
+    "data": {},
+    "body": "\nWelcome! I keep all my coding notes here. Anything I learn about writing code, testing code, updating code, or optimizing code will go here.\n\nCheck back from time to time for updates. \n"
+  },
+  "vaults": [
+    {
+      "fsPath": ".",
+      "selfContained": true,
+      "name": "coding-notes"
+    }
+  ]
+}
