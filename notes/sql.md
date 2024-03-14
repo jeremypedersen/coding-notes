@@ -1,8 +1,8 @@
 ---
 id: xk249rrm3kfwe5twpc1ouak
 title: SQL
-desc: ''
-updated: 1710405477435
+desc: 'Notes on various SQL dialects'
+updated: 1710410065650
 created: 1710405475476
 ---
 
