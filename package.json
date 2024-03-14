@@ -6,6 +6,6 @@
   "author": "Jeremy <jdp@jeremypedersen.com>",
   "license": "Unlicense",
   "dependencies": {
-    "@dendronhq/dendron-cli": "^0.124.1"
+    "@dendronhq/dendron-cli": "^0.122.0"
   }
 }
