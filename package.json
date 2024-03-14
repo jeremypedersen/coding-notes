@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": "https://github.com/jeremypedersen/coding-notes",
   "author": "Jeremy <jdp@jeremypedersen.com>",
-  "license": "The Unlicense",
+  "license": "Unlicense",
   "dependencies": {
     "@dendronhq/dendron-cli": "^0.124.2"
   }
