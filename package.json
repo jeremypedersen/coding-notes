@@ -1,11 +1,11 @@
 {
-  "name": "template.publish.github-action",
+  "name": "coding-notes",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/dendronhq/template.publish.github-action.git",
-  "author": "Kevin <kevin@dendron.so>",
-  "license": "MIT",
+  "repository": "https://github.com/jeremypedersen/coding-notes",
+  "author": "Jeremy <jdp@jeremypedersen.com>",
+  "license": "The Unlicense",
   "dependencies": {
-    "@dendronhq/dendron-cli": "^0.106.0"
+    "@dendronhq/dendron-cli": "^0.124.2"
   }
 }
