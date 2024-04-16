@@ -1,8 +1,8 @@
 ---
 id: 5bixl6kw3cmj3ec9zuvxi1e
-title: Hardware
-desc: ''
-updated: 1710410272417
+title: 'Hardware'
+desc: 'Hardware'
+updated: 1713239852304
 created: 1710410265296
 ---
 

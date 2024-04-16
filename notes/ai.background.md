@@ -1,8 +1,8 @@
 ---
 id: f35m8ieu2pbn12jkz62j3nd
-title: Background Knowledge
+title: 'AI Background Knowledge'
 desc: 'AI background knowledge and required reading'
-updated: 1710410190484
+updated: 1713239891778
 created: 1710410179032
 ---
 

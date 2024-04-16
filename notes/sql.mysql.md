@@ -1,8 +1,8 @@
 ---
 id: kam10ex48ihweawrhzq1ilw
-title: MySQL
-desc: 'Notes on MySQL SQL syntax'
-updated: 1710410059483
+title: 'MySQL Usage'
+desc: 'Notes on MySQL SQL usage and syntax'
+updated: 1713239920214
 created: 1710410040510
 ---
 

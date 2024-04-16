@@ -1,8 +1,8 @@
 ---
 id: x8jpwbeoqnnfm675507a1iz
-title: AI Demos
+title: 'AI Demos'
 desc: 'AI demo models and demo apps'
-updated: 1710410158653
+updated: 1713239886385
 created: 1710410149704
 ---
 

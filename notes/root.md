@@ -1,8 +1,8 @@
 ---
 id: 9qx3z8b2wfr5chnnb949zv2
-title: Coding Notes
+title: 'Coding Notes'
 desc: 'Notes on writing, fixing, optimizing, and managing code'
-updated: 1710410440247
+updated: 1713239898794
 created: 1710404034956
 ---
 

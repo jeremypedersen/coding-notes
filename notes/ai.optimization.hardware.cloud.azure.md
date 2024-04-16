@@ -1,8 +1,8 @@
 ---
 id: 3yu0586pmus823xqn7qln9h
-title: Azure
+title: 'Microsoft Azure'
 desc: 'Azure hardware options for AI apps'
-updated: 1710410415423
+updated: 1713239870733
 created: 1710410339768
 ---
 

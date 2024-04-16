@@ -1,8 +1,8 @@
 ---
 id: lwczcb6ygp92cmni0hwdzap
-title: GCP
+title: 'GCP (Google Cloud)'
 desc: 'Google Cloud Platform (GCP) hardware options for AI apps'
-updated: 1710410418648
+updated: 1713239864455
 created: 1710410333416
 ---
 

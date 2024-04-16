@@ -1,8 +1,8 @@
 ---
 id: 2cu9kgr61gspzceyaodfek0
-title: Techniques
-desc: ''
-updated: 1710410490633
+title: 'Optimization Techniques'
+desc: 'Optimization Techniques'
+updated: 1713239827264
 created: 1710410236612
 ---
 

@@ -1,8 +1,8 @@
 ---
 id: za5or2c8fg13zcu51gxpcqs
-title: Optimization
-desc: ''
-updated: 1710410215849
+title: 'Optimization'
+desc: 'Optimization'
+updated: 1713239846003
 created: 1710410213095
 ---
 

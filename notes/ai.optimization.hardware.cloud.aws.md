@@ -1,8 +1,8 @@
 ---
 id: yqa165ncnezvi0iuv6xi193
-title: AWS
+title: 'Amazon AWS'
 desc: 'AWS hardware options for AI apps'
-updated: 1710410388543
+updated: 1713239877744
 created: 1710410343454
 ---
 
