@@ -1,0 +1,180 @@
+<h1 id="mysql-usage">MySQL Usage<a aria-hidden="true" class="anchor-heading icon-link" href="#mysql-usage"></a></h1>
+<p>Notes on MySQL's flavor of the SQL language.</p>
+<h2 id="section-1-basic-basics-create-and-delete-databases-and-tables-insert-records">Section 1: Basic Basics (Create and delete databases and tables, insert records)<a aria-hidden="true" class="anchor-heading icon-link" href="#section-1-basic-basics-create-and-delete-databases-and-tables-insert-records"></a></h2>
+<p><strong>Show what databases are available to work with</strong></p>
+<pre><code>SHOW DATABASES;
+</code></pre>
+<p><strong>Create a database</strong></p>
+<pre><code>CREATE DATABASE big_company;
+</code></pre>
+<p><strong>Show which database is in use</strong></p>
+<pre><code>SELECT database();
+</code></pre>
+<p><strong>Select a database</strong></p>
+<pre><code>USE big_company;
+</code></pre>
+<p><strong>Show tables in the database</strong></p>
+<pre><code>SHOW TABLES;
+</code></pre>
+<p><strong>Create a new table</strong></p>
+<pre><code>CREATE TABLE employees (
+    employee_id INT,
+    name VARCHAR(80),
+    role VARCHAR(80)
+);
+</code></pre>
+<p><strong>Describe a table (list its fields and datatypes)</strong></p>
+<pre><code>DESC employees;
+</code></pre>
+<p><strong>Show the contents of a table</strong></p>
+<pre><code>SELECT * FROM employees;
+</code></pre>
+<p><strong>Delete a table</strong></p>
+<pre><code>DROP TABLE employees;
+</code></pre>
+<p><strong>Insert a new record into a table</strong></p>
+<pre><code>INSERT INTO employees (employee_id, name, role) 
+VALUES (0, 'Jeremy', 'Founder');
+</code></pre>
+<p><strong>(<em>Shortcut</em>) insert a new record into a table, where all fields are specified</strong></p>
+<pre><code>INSERT INTO employees VALUES (0, 'Jeremy', 'Founder');
+</code></pre>
+<p><strong>Insert mutiple new records into a table</strong></p>
+<pre><code>INSERT INTO employees (employee_id, name, role) 
+VALUES 
+    (1, 'Erica', 'Co-Founder'),
+    (2, 'James', 'CFO'),
+    (3, 'Leslie', 'CTO');
+</code></pre>
+<p><strong>Create a table with <em>required</em> fields (meaning fields which cannot be <code>NULL</code></strong></p>
+<pre><code>CREATE TABLE students (
+    name VARCHAR(80) NOT NULL,
+    gpa INT NOT NULL
+);
+</code></pre>
+<p><strong>Create a table with <em>required</em> fields and <em>default</em> values for those fields</strong></p>
+<pre><code>CREATE TABLE students (
+    name VARCHAR(80) NOT NULL DEFAULT 'noname',
+    gpa INT NOT NULL DEFAULT 0
+);
+</code></pre>
+<p><strong>Insert an empty record (defaults will get filled in)</strong></p>
+<pre><code>INSERT INTO students () VALUES ();
+</code></pre>
+<p><strong>Insert a record where only some fields are specified</strong></p>
+<pre><code>INSERT INTO students (name) VALUES ('James');
+</code></pre>
+<p><strong>Create a table with a primary key</strong></p>
+<pre><code>CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    team_id INT NOT NULL
+);
+</code></pre>
+<p><strong>Create a table with a primary key that increments on its own</strong></p>
+<pre><code>CREATE TABLE employees (
+    employee_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    team_id INT NOT NULL
+);
+</code></pre>
+<p><strong>Insert records into a table with a primary key (identical-looking records can still be differentiated using the primary key)</strong></p>
+<pre><code>INSERT INTO employees (name, team_id) 
+VALUES 
+    ('Bob', 25),
+    ('Bob', 25),
+    ('Bob', 25);
+</code></pre>
+<p><strong>(<em>Optional</em>) another way to create a primary key which auto-increments</strong></p>
+<pre><code>CREATE TABLE employees (
+    employee_id INT AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    team_id INT NOT NULL,
+    PRIMARY KEY(employee_id)
+);
+</code></pre>
+<h2 id="section-2-working-with-data-crud-operations">Section 2: Working with data (CRUD operations)<a aria-hidden="true" class="anchor-heading icon-link" href="#section-2-working-with-data-crud-operations"></a></h2>
+<p><strong>CRUD = Create, Read, Update, Delete</strong></p>
+<h3 id="create">Create<a aria-hidden="true" class="anchor-heading icon-link" href="#create"></a></h3>
+<p><strong>Create a database</strong></p>
+<pre><code>CREATE DATABASE big_company;
+</code></pre>
+<p><strong>Create a table</strong></p>
+<pre><code>CREATE TABLE employees (
+    employee_id INT AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    team_id INT NOT NULL,
+    PRIMARY KEY(employee_id)
+);
+</code></pre>
+<p><strong>Create a record in a table</strong></p>
+<pre><code>INSERT INTO employees (name, team_id) VALUES ('Bob', 25);
+</code></pre>
+<h3 id="read">Read<a aria-hidden="true" class="anchor-heading icon-link" href="#read"></a></h3>
+<p><strong>Select all items from a table (<em>read</em>)</strong></p>
+<pre><code>SELECT * FROM employees;
+</code></pre>
+<p><strong>Select specific columns</strong></p>
+<pre><code>SELECT name FROM employees;
+</code></pre>
+<p><strong>Select records that meet a certain condition</strong></p>
+<pre><code>SELECT * FROM employees WHERE name = 'Bob';
+</code></pre>
+<p><em>Note:</em> Just because we are using <code>WHERE</code> with a specific column, doesn't mean we have to <code>SELECT</code> that column. For instance, if I wanted to know which teams had an employee named "Bob", I could do this:</p>
+<pre><code>SELECT team_id FROM employees WHERE name = 'Bob' ;
+</code></pre>
+<p><em>Note:</em> By default, string comparisons are <em>case insensitive</em> in MySQL. </p>
+<p><strong>Select records where one column's value matches the value of another column</strong></p>
+<pre><code>SELECT * FROM employees where team_id = employee_id;
+</code></pre>
+<p><strong>Rename one or more columns using <code>AS</code></strong></p>
+<pre><code>SELECT employee_id AS id, name FROM employees; 
+</code></pre>
+<h3 id="update">Update<a aria-hidden="true" class="anchor-heading icon-link" href="#update"></a></h3>
+<p><strong>Update an existing row in a table</strong></p>
+<pre><code>UPDATE employees SET name = 'Other Bob' WHERE employee_id = 1;
+</code></pre>
+<p><strong>Update a single column for all rows at once</strong></p>
+<pre><code>UPDATE employees SET name = 'Whatever';
+</code></pre>
+<p><strong>Update multiple columns for all rows at once</strong></p>
+<pre><code>UPDATE employees SET name = 'Whatever', team_id = 0;
+</code></pre>
+<p><strong>Delete one row</strong></p>
+<pre><code>DELETE FROM employees WHERE employee_id = 1;
+</code></pre>
+<p><strong>Delete one or more rows that match a pattern</strong></p>
+<pre><code>DELETE FROM employees WHERE name = 'Whatever';
+</code></pre>
+<p><strong>Delete <em>all</em> rows</strong></p>
+<pre><code>DELETE FROM employees;
+</code></pre>
+<h2 id="section-3-working-with-string-functions">Section 3: Working with string functions<a aria-hidden="true" class="anchor-heading icon-link" href="#section-3-working-with-string-functions"></a></h2>
+<p><strong>Concatenate arbitrary strings</strong></p>
+<pre><code>SELECT CONCAT('h', 'e', 'l', 'l', 'o');
+</code></pre>
+<p><strong>Concatenate string data from from two columns in a table</strong></p>
+<pre><code>SELECT CONCAT (first_name, ' ', last_name) FROM friends;
+</code></pre>
+<p><strong>Concatenate and rename the output</strong></p>
+<pre><code>SELECT CONCAT (first_name, ' ', last_name) AS full_name FROM friends ;
+</code></pre>
+<p><strong>Concatenate with a separator between each item</strong></p>
+<pre><code>SELECT CONCAT_WS (' ', first_name, last_name) AS full_name FROM friends ;
+</code></pre>
+<h3 id="the-substring-function">The <code>SUBSTRING</code> Function<a aria-hidden="true" class="anchor-heading icon-link" href="#the-substring-function"></a></h3>
+<p><code>SUBSTRING</code> is a cool little function that lets you select a portion of a string. </p>
+<p><strong>Select 4 characters, starting from index 1 (the first character)</strong></p>
+<pre><code>SELECT SUBSTRING('Hey there friends', 1, 4);
+</code></pre>
+<p><strong>Note:</strong> The command above will print out <code>Hey </code>, which appears to be 3 characters but is actually four (remember there's a space after the <code>y</code>!)</p>
+<p><strong>Select all characters from position 5 to the end of the string</strong></p>
+<pre><code>SELECT SUBSTRING('Hey there friends', 5);
+</code></pre>
+<p><strong>Note:</strong> This will print <code>there friends</code></p>
+<p><strong>Select the <em>last</em> three characters in a string</strong></p>
+<pre><code>SELECT SUBSTRING('Hey there friends', -3);
+</code></pre>
+<p><strong>Note:</strong> This will print <code>nds</code></p>
+<h3 id="combining-substring-with-concat">Combining <code>SUBSTRING</code> with <code>CONCAT</code><a aria-hidden="true" class="anchor-heading icon-link" href="#combining-substring-with-concat"></a></h3>
+<p>Coming soon!</p>

@@ -1,0 +1,80 @@
+<h1 id="hardware">Hardware<a aria-hidden="true" class="anchor-heading icon-link" href="#hardware"></a></h1>
+<p>This section talks about the different hardware configurations which can be used to run ML models. </p>
+<p>To avoid having this section explode to cover every recent version of every piece of hardware from every major vendor, we will try to focus on newer hardware, and on very large models like <a href="https://huggingface.co/docs/diffusers/en/using-diffusers/sdxl">SDXL</a> or <a href="https://huggingface.co/meta-llama">Llama 2</a>, which are large enough that compute and memory constraints come into play even on new hardware.</p>
+<p>For each piece of hardware we will try to address the following questions:</p>
+<ul>
+<li>What is its general type? 
+<ul>
+<li>CPU</li>
+<li>GPU</li>
+<li>FPGA</li>
+<li>Something else</li>
+</ul>
+</li>
+<li>What is its architecture? 
+<ul>
+<li>ARM</li>
+<li>x86</li>
+<li>Something else</li>
+</ul>
+</li>
+<li>Where is it available? 
+<ul>
+<li>Cloud
+<ul>
+<li>Which provider?</li>
+<li>Which regions?</li>
+</ul>
+</li>
+<li>Local</li>
+</ul>
+</li>
+<li>What data types are supported? 
+<ul>
+<li>FLOAT32</li>
+<li>FLOAT16</li>
+<li>BFLOAT16</li>
+<li>INT8</li>
+<li>Others</li>
+</ul>
+</li>
+<li>AI Acceleration features? 
+<ul>
+<li>OpenVINO toolkit (Intel)</li>
+<li>Advanced Matrix Extensions (AMX - Intel)</li>
+<li>Neuron (AWS Inferentia SDK)</li>
+</ul>
+</li>
+<li>What does it cost?
+<ul>
+<li>Hourly</li>
+<li>Yearly (for providers with up-front pricing options)</li>
+<li>Fixed cost (for local hardware)</li>
+</ul>
+</li>
+<li>How well does it perform? 
+<ul>
+<li>Inference and fine-tuning speeds</li>
+<li>Inferences-per-second</li>
+<li>Cost-per-inference</li>
+</ul>
+</li>
+</ul>
+<p>To try to keep things organized, we will sort hardware into two general categories:</p>
+<ol>
+<li>Cloud: hardware available from major cloud providers.</li>
+<li>Edge: hardware you run yourself locally.</li>
+</ol>
+<p>This scheme results in some overlap as most of the hardware available through the major cloud providers will overlap, but it means we get to see differences in pricing and regional availability by provider. It also separates out consumer hardware intended to be used and purchased by individuals from server hardware (which is what the cloud companies buy and/or build). </p>
+<h3 id="edge">Edge<a aria-hidden="true" class="anchor-heading icon-link" href="#edge"></a></h3>
+<p>Nothing here yet!</p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/coding-notes/notes/2ka8m9fs91h5ucy4t6hpmt0">Cloud Hardware</a></li>
+</ol>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/coding-notes/notes/2cu9kgr61gspzceyaodfek0">Optimization Techniques</a></li>
+</ul>
