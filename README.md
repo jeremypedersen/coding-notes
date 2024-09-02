@@ -1,5 +1,5 @@
 # Coding Notes
 
-My notes on all things code, managed with [Dendron](https://www.dendron.so/).
+A repo containing all my notes on coding-related stuff. **[Click here to take a look](https://jeremypedersen.github.io/coding-notes/).**
 
-**You can find the published site on GitHub sites, here**: https://jeremypedersen.github.io/coding-notes/
+These notes rae living managed using [Dendron](https://www.dendron.so/).
