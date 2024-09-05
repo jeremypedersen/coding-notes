@@ -2,7 +2,7 @@
 id: zrzuso1wjne88yp1b9wtm8v
 title: 'Computer Vision'
 desc: 'Computer Vision'
-updated: 1725517452678
+updated: 1725517663182
 created: 1725513444786
 ---
 
@@ -38,6 +38,8 @@ It looks like for simple 3D reconstructions from a set of photographs Meshlab ma
 
 As for **sharing the resulting models** it seems [Thingiverse](https://www.thingiverse.com/) is the go-to for 3D printing, and [Sketchfab](https://sketchfab.com) for general 3D models.  
 
+Apparently [Three.js](https://threejs.org/examples/#webgl_animation_keyframes) can also display reconstructions, up to and including animation! 
+
 ## Panoramas
 
 - [Hugin](https://hugin.sourceforge.io/), which appears to be the leading open source toolkit for making panoramic images, and is based on [Panorama tools](https://panotools.sourceforge.net/). Both seem to be working just fine but are quite old and seem to mostly just be receiving maintenance updates. The releases on the Hugin site indicate that no major new features are being added, but the software is being actively maintained.
@@ -50,5 +52,5 @@ There are some really, really cool demos that mix photography and generative AI.
 - [InstantMesh](https://huggingface.co/spaces/TencentARC/InstantMesh) takes a single photo, generates best-guesses for multiple views of the object, and then uses those to create an actual colorized 3D model in OBJ or GLB format.
 - [StableDesign](https://huggingface.co/spaces/MykolaL/StableDesign) submit an image of a bare interior and a description of the interior design aesthetic you are interested in, and the system generates a concept image showing the space redesigned to meet your needs.
 - [Minecraft skin generator](https://huggingface.co/spaces/Nick088/Stable_Diffusion_Finetuned_Minecraft_Skin_Generator) Use a prompt to generate 3D models which can be used as "skins" for player characters in Minecraft.
-- [multimodalart](https://huggingface.co/multimodalart), a really interesting collection of spaces for generating AI art, including spaces to help you [easily create and train LoRAs](https://huggingface.co/spaces/multimodalart/lora-ease) and space to [re-style selifes](https://huggingface.co/spaces/multimodalart/face-to-all).
+- [multimodalart](https://huggingface.co/multimodalart), a really interesting collection of spaces for generating AI art, including spaces to help you [easily create and train LoRAs](https://huggingface.co/spaces/multimodalart/lora-ease) and space to [re-style selfies](https://huggingface.co/spaces/multimodalart/face-to-all).
 
