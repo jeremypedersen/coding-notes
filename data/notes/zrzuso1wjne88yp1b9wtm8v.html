@@ -1,0 +1,41 @@
+<h1 id="computer-vision">Computer Vision<a aria-hidden="true" class="anchor-heading icon-link" href="#computer-vision"></a></h1>
+<p>Resources related to computer vision. For me this means everything from image processing to stitching panoramas to photogrammetry and even creating and editing NeRF models. </p>
+<p>For now it's just sort of a brain dump where I collect tools I want to play with. Here are a few I'm researching now.</p>
+<p>Right now the focus is mostly on traditional CV. Things that are more obviously AI driven like text-to-image models will go into the <code>ai.</code> notes tree. </p>
+<h2 id="focus-stacking">Focus stacking<a aria-hidden="true" class="anchor-heading icon-link" href="#focus-stacking"></a></h2>
+<ul>
+<li><a href="https://github.com/PetteriAimonen/focus-stack">focus-stack</a>, plus <a href="https://peterfalkingham.com/2024/04/29/an-excellent-free-and-open-source-focus-stacking-solution/">this blog post</a> talking about how to use it. </li>
+</ul>
+<h2 id="3d-reconstruction-and-photogrammetry">3D Reconstruction and Photogrammetry<a aria-hidden="true" class="anchor-heading icon-link" href="#3d-reconstruction-and-photogrammetry"></a></h2>
+<ul>
+<li><a href="https://github.com/micmacIGN/micmac">micmac</a>, open source photogrammetry.</li>
+<li><a href="https://github.com/alicevision/Meshroom?tab=readme-ov-file">meshroom</a>, open source 3D reconstruction software</li>
+<li>A quick <a href="https://moviola.com/courses/meshroom-survival-guide/">survival guide</a> to using meshroom</li>
+<li><a href="https://docs.nerf.studio/">nerfstudio</a> for building NeRFs.</li>
+<li><a href="https://www.danielgm.net/cc/">CloudCompare</a> open source software for working with 3D point clouds and meshes.</li>
+<li><a href="https://www.meshlab.net/">MeshLab</a> open source system for processing and editing 3D triangular meshes.</li>
+<li><a href="https://www.open3d.org/">Open3D</a>, open source software for 3D data processing, with <a href="https://www.open3d.org/docs/release/">documenatation here</a>.</li>
+<li><a href="https://www.regard3d.org/index.php/documentation/tutorial">Regard3D</a> open source software to go from a set of images to a 3D model. </li>
+<li><a href="http://imagine.enpc.fr/~moulonp/openMVG/index.html">openMVG</a> tool for "multiple view geometry" targeted to developers. Looks like it makes it easy to solve for geometry using 2 to "N" different views of a scene. </li>
+<li><a href="https://github.com/cdcseacave/openMVS">openMVS</a> stereo view reconstruction software. Looks like it can do a ton of cool stuff but I'm mostly interested in the ability to do mesh reconstruction (to make 3D models).</li>
+<li><a href="https://www.di.ens.fr/pmvs/">PMVS (Patch-based Multi-vew Stereo)</a>, a tool for doing the 3D reconstruction from a set of images. Apparently it is included inside <a href="https://www.di.ens.fr/cmvs/">CVMS (Clustering Views for Multi-vew Stereo)</a>.</li>
+</ul>
+<p>While looking for open source photogrammetry solutions, I ran across <a href="https://arc-team-open-research.blogspot.com/2016/12/comparing-7-photogrammetry-systems.html">this cool blog post from an archaeology team</a> talking about reconstructions done for scientific purposes. </p>
+<p>Wildly enough, the quality of these models can be quite good. Good enough to <a href="https://www.dailymail.co.uk/sciencetech/article-3678651/Animal-avengers-rescue-Adorable-puppy-eat-3D-printed-tooth-replaces-one-broke-chewing.html">print replacement teeth for dogs</a>, at least.</p>
+<p>They looked at a couple different solutions and chose openMVS + openMVG as their general favorite.</p>
+<p>It looks like for simple 3D reconstructions from a set of photographs Meshlab may also work (not tested in their blog).</p>
+<p>As for <strong>sharing the resulting models</strong> it seems <a href="https://www.thingiverse.com/">Thingiverse</a> is the go-to for 3D printing, and <a href="https://sketchfab.com">Sketchfab</a> for general 3D models.  </p>
+<p>Apparently <a href="https://threejs.org/examples/#webgl_animation_keyframes">Three.js</a> can also display reconstructions, up to and including animation! </p>
+<h2 id="panoramas">Panoramas<a aria-hidden="true" class="anchor-heading icon-link" href="#panoramas"></a></h2>
+<ul>
+<li><a href="https://hugin.sourceforge.io/">Hugin</a>, which appears to be the leading open source toolkit for making panoramic images, and is based on <a href="https://panotools.sourceforge.net/">Panorama tools</a>. Both seem to be working just fine but are quite old and seem to mostly just be receiving maintenance updates. The releases on the Hugin site indicate that no major new features are being added, but the software is being actively maintained.</li>
+<li><a href="https://krupkat.github.io/xpano/">Xpano</a> looks like a simpler alternative to Hugin, will autodetect related images in a folder, stitch them, and export.</li>
+</ul>
+<h2 id="aiml-stuff">AI/ML Stuff<a aria-hidden="true" class="anchor-heading icon-link" href="#aiml-stuff"></a></h2>
+<p>There are some really, really cool demos that mix photography and generative AI. Most of them are hosted on HuggingFace. Here are a couple I've looked at: </p>
+<ul>
+<li><a href="https://huggingface.co/spaces/TencentARC/InstantMesh">InstantMesh</a> takes a single photo, generates best-guesses for multiple views of the object, and then uses those to create an actual colorized 3D model in OBJ or GLB format.</li>
+<li><a href="https://huggingface.co/spaces/MykolaL/StableDesign">StableDesign</a> submit an image of a bare interior and a description of the interior design aesthetic you are interested in, and the system generates a concept image showing the space redesigned to meet your needs.</li>
+<li><a href="https://huggingface.co/spaces/Nick088/Stable_Diffusion_Finetuned_Minecraft_Skin_Generator">Minecraft skin generator</a> Use a prompt to generate 3D models which can be used as "skins" for player characters in Minecraft.</li>
+<li><a href="https://huggingface.co/multimodalart">multimodalart</a>, a really interesting collection of spaces for generating AI art, including spaces to help you <a href="https://huggingface.co/spaces/multimodalart/lora-ease">easily create and train LoRAs</a> and space to <a href="https://huggingface.co/spaces/multimodalart/face-to-all">re-style selfies</a>.</li>
+</ul>

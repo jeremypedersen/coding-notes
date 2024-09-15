@@ -1,0 +1,180 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><link rel="icon" href="/coding-notes/favicon.ico"/><title>MySQL Usage</title><meta name="robots" content="index,follow"/><meta name="googlebot" content="index,follow"/><meta name="description" content="Notes on MySQL SQL usage and syntax"/><meta property="og:title" content="MySQL Usage"/><meta property="og:description" content="Notes on MySQL SQL usage and syntax"/><meta property="og:url" content="https://jeremypedersen.github.io/coding-notes/notes/kam10ex48ihweawrhzq1ilw/"/><meta property="og:type" content="article"/><meta property="article:published_time" content="3/14/2024"/><meta property="article:modified_time" content="4/16/2024"/><link rel="canonical" href="https://jeremypedersen.github.io/coding-notes/notes/kam10ex48ihweawrhzq1ilw/"/><meta name="next-head-count" content="14"/><link rel="preload" href="/coding-notes/_next/static/css/b0c7e77ce5f99436.css" as="style"/><link rel="stylesheet" href="/coding-notes/_next/static/css/b0c7e77ce5f99436.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/coding-notes/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/coding-notes/_next/static/chunks/webpack-eed3f0eedf802397.js" defer=""></script><script src="/coding-notes/_next/static/chunks/framework-28c999baf2863c3d.js" defer=""></script><script src="/coding-notes/_next/static/chunks/main-29387b2bb14b1eb7.js" defer=""></script><script src="/coding-notes/_next/static/chunks/pages/_app-dc4bb01b71d58e47.js" defer=""></script><script src="/coding-notes/_next/static/chunks/935-4dee79e80b8641c6.js" defer=""></script><script src="/coding-notes/_next/static/chunks/6-50972def09142ee2.js" defer=""></script><script src="/coding-notes/_next/static/chunks/pages/notes/%5Bid%5D-78d472fa3b924116.js" defer=""></script><script src="/coding-notes/_next/static/jdQmoR0T7zxn3zBS6JrtA/_buildManifest.js" defer=""></script><script src="/coding-notes/_next/static/jdQmoR0T7zxn3zBS6JrtA/_ssgManifest.js" defer=""></script></head><body><div id="__next" data-reactroot=""><section class="ant-layout" style="width:100%;min-height:100%"><header class="ant-layout-header" style="position:fixed;isolation:isolate;z-index:1;width:100%;border-bottom:1px solid #d4dadf;height:64px;padding:0 24px 0 2px"><div class="ant-row ant-row-center" style="max-width:992px;justify-content:space-between;margin:0 auto"><div style="display:flex" class="ant-col ant-col-xs-20 ant-col-sm-4"></div><div class="ant-col gutter-row ant-col-xs-0 ant-col-sm-20 ant-col-md-20 ant-col-lg-19"><div class="ant-select ant-select-lg ant-select-auto-complete ant-select-single ant-select-allow-clear ant-select-show-search" style="width:100%"><div class="ant-select-selector"><span class="ant-select-selection-search"><input type="search" autoComplete="off" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="undefined_list" aria-autocomplete="list" aria-controls="undefined_list" aria-activedescendant="undefined_list_0" value=""/></span><span class="ant-select-selection-placeholder">For full text search please use the &#x27;?&#x27; prefix. e.g. ? Onboarding</span></div></div></div><div style="display:none;align-items:center;justify-content:center" class="ant-col ant-col-xs-4 ant-col-sm-4 ant-col-md-0 ant-col-lg-0"><span role="img" aria-label="menu" style="font-size:24px" tabindex="-1" class="anticon anticon-menu"><svg viewBox="64 64 896 896" focusable="false" data-icon="menu" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg></span></div></div></header><section class="ant-layout" style="margin-top:64px;display:flex;flex-direction:row"><div class="site-layout-sidebar" style="flex:0 0 auto;width:calc(max((100% - 992px) / 2, 0px) + 200px);min-width:200px;padding-left:calc((100% - 992px) / 2)"><aside class="ant-layout-sider ant-layout-sider-dark" style="position:fixed;overflow:auto;height:calc(100vh - 64px);background-color:transparent;flex:0 0 200px;max-width:200px;min-width:200px;width:200px"><div class="ant-layout-sider-children"></div></aside></div><main class="ant-layout-content side-layout-main" style="max-width:1200px;min-width:0;display:block"><div style="padding:0 24px"><div class="main-content" role="main"><div class="ant-row"><div class="ant-col ant-col-24"><div class="ant-row" style="margin-left:-10px;margin-right:-10px"><div style="padding-left:10px;padding-right:10px" class="ant-col ant-col-xs-24 ant-col-md-18"><div><h1 id="mysql-usage">MySQL Usage<a aria-hidden="true" class="anchor-heading icon-link" href="#mysql-usage"></a></h1>
+<p>Notes on MySQL's flavor of the SQL language.</p>
+<h2 id="section-1-basic-basics-create-and-delete-databases-and-tables-insert-records">Section 1: Basic Basics (Create and delete databases and tables, insert records)<a aria-hidden="true" class="anchor-heading icon-link" href="#section-1-basic-basics-create-and-delete-databases-and-tables-insert-records"></a></h2>
+<p><strong>Show what databases are available to work with</strong></p>
+<pre><code>SHOW DATABASES;
+</code></pre>
+<p><strong>Create a database</strong></p>
+<pre><code>CREATE DATABASE big_company;
+</code></pre>
+<p><strong>Show which database is in use</strong></p>
+<pre><code>SELECT database();
+</code></pre>
+<p><strong>Select a database</strong></p>
+<pre><code>USE big_company;
+</code></pre>
+<p><strong>Show tables in the database</strong></p>
+<pre><code>SHOW TABLES;
+</code></pre>
+<p><strong>Create a new table</strong></p>
+<pre><code>CREATE TABLE employees (
+    employee_id INT,
+    name VARCHAR(80),
+    role VARCHAR(80)
+);
+</code></pre>
+<p><strong>Describe a table (list its fields and datatypes)</strong></p>
+<pre><code>DESC employees;
+</code></pre>
+<p><strong>Show the contents of a table</strong></p>
+<pre><code>SELECT * FROM employees;
+</code></pre>
+<p><strong>Delete a table</strong></p>
+<pre><code>DROP TABLE employees;
+</code></pre>
+<p><strong>Insert a new record into a table</strong></p>
+<pre><code>INSERT INTO employees (employee_id, name, role) 
+VALUES (0, 'Jeremy', 'Founder');
+</code></pre>
+<p><strong>(<em>Shortcut</em>) insert a new record into a table, where all fields are specified</strong></p>
+<pre><code>INSERT INTO employees VALUES (0, 'Jeremy', 'Founder');
+</code></pre>
+<p><strong>Insert mutiple new records into a table</strong></p>
+<pre><code>INSERT INTO employees (employee_id, name, role) 
+VALUES 
+    (1, 'Erica', 'Co-Founder'),
+    (2, 'James', 'CFO'),
+    (3, 'Leslie', 'CTO');
+</code></pre>
+<p><strong>Create a table with <em>required</em> fields (meaning fields which cannot be <code>NULL</code></strong></p>
+<pre><code>CREATE TABLE students (
+    name VARCHAR(80) NOT NULL,
+    gpa INT NOT NULL
+);
+</code></pre>
+<p><strong>Create a table with <em>required</em> fields and <em>default</em> values for those fields</strong></p>
+<pre><code>CREATE TABLE students (
+    name VARCHAR(80) NOT NULL DEFAULT 'noname',
+    gpa INT NOT NULL DEFAULT 0
+);
+</code></pre>
+<p><strong>Insert an empty record (defaults will get filled in)</strong></p>
+<pre><code>INSERT INTO students () VALUES ();
+</code></pre>
+<p><strong>Insert a record where only some fields are specified</strong></p>
+<pre><code>INSERT INTO students (name) VALUES ('James');
+</code></pre>
+<p><strong>Create a table with a primary key</strong></p>
+<pre><code>CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    team_id INT NOT NULL
+);
+</code></pre>
+<p><strong>Create a table with a primary key that increments on its own</strong></p>
+<pre><code>CREATE TABLE employees (
+    employee_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    team_id INT NOT NULL
+);
+</code></pre>
+<p><strong>Insert records into a table with a primary key (identical-looking records can still be differentiated using the primary key)</strong></p>
+<pre><code>INSERT INTO employees (name, team_id) 
+VALUES 
+    ('Bob', 25),
+    ('Bob', 25),
+    ('Bob', 25);
+</code></pre>
+<p><strong>(<em>Optional</em>) another way to create a primary key which auto-increments</strong></p>
+<pre><code>CREATE TABLE employees (
+    employee_id INT AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    team_id INT NOT NULL,
+    PRIMARY KEY(employee_id)
+);
+</code></pre>
+<h2 id="section-2-working-with-data-crud-operations">Section 2: Working with data (CRUD operations)<a aria-hidden="true" class="anchor-heading icon-link" href="#section-2-working-with-data-crud-operations"></a></h2>
+<p><strong>CRUD = Create, Read, Update, Delete</strong></p>
+<h3 id="create">Create<a aria-hidden="true" class="anchor-heading icon-link" href="#create"></a></h3>
+<p><strong>Create a database</strong></p>
+<pre><code>CREATE DATABASE big_company;
+</code></pre>
+<p><strong>Create a table</strong></p>
+<pre><code>CREATE TABLE employees (
+    employee_id INT AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    team_id INT NOT NULL,
+    PRIMARY KEY(employee_id)
+);
+</code></pre>
+<p><strong>Create a record in a table</strong></p>
+<pre><code>INSERT INTO employees (name, team_id) VALUES ('Bob', 25);
+</code></pre>
+<h3 id="read">Read<a aria-hidden="true" class="anchor-heading icon-link" href="#read"></a></h3>
+<p><strong>Select all items from a table (<em>read</em>)</strong></p>
+<pre><code>SELECT * FROM employees;
+</code></pre>
+<p><strong>Select specific columns</strong></p>
+<pre><code>SELECT name FROM employees;
+</code></pre>
+<p><strong>Select records that meet a certain condition</strong></p>
+<pre><code>SELECT * FROM employees WHERE name = 'Bob';
+</code></pre>
+<p><em>Note:</em> Just because we are using <code>WHERE</code> with a specific column, doesn't mean we have to <code>SELECT</code> that column. For instance, if I wanted to know which teams had an employee named "Bob", I could do this:</p>
+<pre><code>SELECT team_id FROM employees WHERE name = 'Bob' ;
+</code></pre>
+<p><em>Note:</em> By default, string comparisons are <em>case insensitive</em> in MySQL. </p>
+<p><strong>Select records where one column's value matches the value of another column</strong></p>
+<pre><code>SELECT * FROM employees where team_id = employee_id;
+</code></pre>
+<p><strong>Rename one or more columns using <code>AS</code></strong></p>
+<pre><code>SELECT employee_id AS id, name FROM employees; 
+</code></pre>
+<h3 id="update">Update<a aria-hidden="true" class="anchor-heading icon-link" href="#update"></a></h3>
+<p><strong>Update an existing row in a table</strong></p>
+<pre><code>UPDATE employees SET name = 'Other Bob' WHERE employee_id = 1;
+</code></pre>
+<p><strong>Update a single column for all rows at once</strong></p>
+<pre><code>UPDATE employees SET name = 'Whatever';
+</code></pre>
+<p><strong>Update multiple columns for all rows at once</strong></p>
+<pre><code>UPDATE employees SET name = 'Whatever', team_id = 0;
+</code></pre>
+<p><strong>Delete one row</strong></p>
+<pre><code>DELETE FROM employees WHERE employee_id = 1;
+</code></pre>
+<p><strong>Delete one or more rows that match a pattern</strong></p>
+<pre><code>DELETE FROM employees WHERE name = 'Whatever';
+</code></pre>
+<p><strong>Delete <em>all</em> rows</strong></p>
+<pre><code>DELETE FROM employees;
+</code></pre>
+<h2 id="section-3-working-with-string-functions">Section 3: Working with string functions<a aria-hidden="true" class="anchor-heading icon-link" href="#section-3-working-with-string-functions"></a></h2>
+<p><strong>Concatenate arbitrary strings</strong></p>
+<pre><code>SELECT CONCAT('h', 'e', 'l', 'l', 'o');
+</code></pre>
+<p><strong>Concatenate string data from from two columns in a table</strong></p>
+<pre><code>SELECT CONCAT (first_name, ' ', last_name) FROM friends;
+</code></pre>
+<p><strong>Concatenate and rename the output</strong></p>
+<pre><code>SELECT CONCAT (first_name, ' ', last_name) AS full_name FROM friends ;
+</code></pre>
+<p><strong>Concatenate with a separator between each item</strong></p>
+<pre><code>SELECT CONCAT_WS (' ', first_name, last_name) AS full_name FROM friends ;
+</code></pre>
+<h3 id="the-substring-function">The <code>SUBSTRING</code> Function<a aria-hidden="true" class="anchor-heading icon-link" href="#the-substring-function"></a></h3>
+<p><code>SUBSTRING</code> is a cool little function that lets you select a portion of a string. </p>
+<p><strong>Select 4 characters, starting from index 1 (the first character)</strong></p>
+<pre><code>SELECT SUBSTRING('Hey there friends', 1, 4);
+</code></pre>
+<p><strong>Note:</strong> The command above will print out <code>Hey </code>, which appears to be 3 characters but is actually four (remember there's a space after the <code>y</code>!)</p>
+<p><strong>Select all characters from position 5 to the end of the string</strong></p>
+<pre><code>SELECT SUBSTRING('Hey there friends', 5);
+</code></pre>
+<p><strong>Note:</strong> This will print <code>there friends</code></p>
+<p><strong>Select the <em>last</em> three characters in a string</strong></p>
+<pre><code>SELECT SUBSTRING('Hey there friends', -3);
+</code></pre>
+<p><strong>Note:</strong> This will print <code>nds</code></p>
+<h3 id="combining-substring-with-concat">Combining <code>SUBSTRING</code> with <code>CONCAT</code><a aria-hidden="true" class="anchor-heading icon-link" href="#combining-substring-with-concat"></a></h3>
+<p>Coming soon!</p></div></div><div style="padding-left:10px;padding-right:10px" class="ant-col ant-col-xs-0 ant-col-md-6"><div><div class=""><div class="ant-anchor-wrapper dendron-toc" style="max-height:calc(100vh - 64px);z-index:1"><div class="ant-anchor"><div class="ant-anchor-ink"><span class="ant-anchor-ink-ball"></span></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#section-1-basic-basics-create-and-delete-databases-and-tables-insert-records" title="Section 1: Basic Basics (Create and delete databases and tables, insert records)">Section 1: Basic Basics (Create and delete databases and tables, insert records)</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#section-2-working-with-data-crud-operations" title="Section 2: Working with data (CRUD operations)">Section 2: Working with data (CRUD operations)</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#create" title="Create">Create</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#read" title="Read">Read</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#update" title="Update">Update</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#section-3-working-with-string-functions" title="Section 3: Working with string functions">Section 3: Working with string functions</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#the-substring-function" title="The SUBSTRING Function">The SUBSTRING Function</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#combining-substring-with-concat" title="Combining SUBSTRING with CONCAT">Combining SUBSTRING with CONCAT</a></div></div></div></div></div></div></div></div></div></div></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><footer class="ant-layout-footer" style="padding:0 24px 24px"></footer></main></section></section></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"note":{"id":"kam10ex48ihweawrhzq1ilw","title":"MySQL Usage","desc":"Notes on MySQL SQL usage and syntax","updated":1713239920214,"created":1710410040510,"custom":{},"fname":"sql.mysql","type":"note","vault":{"fsPath":".","selfContained":true,"name":"coding-notes"},"contentHash":"d2fb30e41c12a423e1cfb753199871ea","links":[],"anchors":{"section-1-basic-basics-create-and-delete-databases-and-tables-insert-records":{"type":"header","text":"Section 1: Basic Basics (Create and delete databases and tables, insert records)","value":"section-1-basic-basics-create-and-delete-databases-and-tables-insert-records","line":11,"column":0,"depth":2},"section-2-working-with-data-crud-operations":{"type":"header","text":"Section 2: Working with data (CRUD operations)","value":"section-2-working-with-data-crud-operations","line":165,"column":0,"depth":2},"create":{"type":"header","text":"Create","value":"create","line":169,"column":0,"depth":3},"read":{"type":"header","text":"Read","value":"read","line":194,"column":0,"depth":3},"update":{"type":"header","text":"Update","value":"update","line":233,"column":0,"depth":3},"section-3-working-with-string-functions":{"type":"header","text":"Section 3: Working with string functions","value":"section-3-working-with-string-functions","line":271,"column":0,"depth":2},"the-substring-function":{"type":"header","text":"The SUBSTRING Function","value":"the-substring-function","line":297,"column":0,"depth":3},"combining-substring-with-concat":{"type":"header","text":"Combining SUBSTRING with CONCAT","value":"combining-substring-with-concat","line":325,"column":0,"depth":3}},"children":[],"parent":"xk249rrm3kfwe5twpc1ouak","data":{}},"body":"\u003ch1 id=\"mysql-usage\"\u003eMySQL Usage\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#mysql-usage\"\u003e\u003c/a\u003e\u003c/h1\u003e\n\u003cp\u003eNotes on MySQL's flavor of the SQL language.\u003c/p\u003e\n\u003ch2 id=\"section-1-basic-basics-create-and-delete-databases-and-tables-insert-records\"\u003eSection 1: Basic Basics (Create and delete databases and tables, insert records)\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#section-1-basic-basics-create-and-delete-databases-and-tables-insert-records\"\u003e\u003c/a\u003e\u003c/h2\u003e\n\u003cp\u003e\u003cstrong\u003eShow what databases are available to work with\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSHOW DATABASES;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eCreate a database\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eCREATE DATABASE big_company;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eShow which database is in use\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSELECT database();\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eSelect a database\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eUSE big_company;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eShow tables in the database\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSHOW TABLES;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eCreate a new table\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eCREATE TABLE employees (\n    employee_id INT,\n    name VARCHAR(80),\n    role VARCHAR(80)\n);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eDescribe a table (list its fields and datatypes)\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eDESC employees;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eShow the contents of a table\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSELECT * FROM employees;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eDelete a table\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eDROP TABLE employees;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eInsert a new record into a table\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eINSERT INTO employees (employee_id, name, role) \nVALUES (0, 'Jeremy', 'Founder');\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e(\u003cem\u003eShortcut\u003c/em\u003e) insert a new record into a table, where all fields are specified\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eINSERT INTO employees VALUES (0, 'Jeremy', 'Founder');\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eInsert mutiple new records into a table\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eINSERT INTO employees (employee_id, name, role) \nVALUES \n    (1, 'Erica', 'Co-Founder'),\n    (2, 'James', 'CFO'),\n    (3, 'Leslie', 'CTO');\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eCreate a table with \u003cem\u003erequired\u003c/em\u003e fields (meaning fields which cannot be \u003ccode\u003eNULL\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eCREATE TABLE students (\n    name VARCHAR(80) NOT NULL,\n    gpa INT NOT NULL\n);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eCreate a table with \u003cem\u003erequired\u003c/em\u003e fields and \u003cem\u003edefault\u003c/em\u003e values for those fields\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eCREATE TABLE students (\n    name VARCHAR(80) NOT NULL DEFAULT 'noname',\n    gpa INT NOT NULL DEFAULT 0\n);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eInsert an empty record (defaults will get filled in)\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eINSERT INTO students () VALUES ();\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eInsert a record where only some fields are specified\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eINSERT INTO students (name) VALUES ('James');\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eCreate a table with a primary key\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eCREATE TABLE employees (\n    employee_id INT PRIMARY KEY,\n    name VARCHAR(100) NOT NULL,\n    team_id INT NOT NULL\n);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eCreate a table with a primary key that increments on its own\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eCREATE TABLE employees (\n    employee_id INT PRIMARY KEY AUTO_INCREMENT,\n    name VARCHAR(100) NOT NULL,\n    team_id INT NOT NULL\n);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eInsert records into a table with a primary key (identical-looking records can still be differentiated using the primary key)\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eINSERT INTO employees (name, team_id) \nVALUES \n    ('Bob', 25),\n    ('Bob', 25),\n    ('Bob', 25);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e(\u003cem\u003eOptional\u003c/em\u003e) another way to create a primary key which auto-increments\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eCREATE TABLE employees (\n    employee_id INT AUTO_INCREMENT,\n    name VARCHAR(100) NOT NULL,\n    team_id INT NOT NULL,\n    PRIMARY KEY(employee_id)\n);\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2 id=\"section-2-working-with-data-crud-operations\"\u003eSection 2: Working with data (CRUD operations)\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#section-2-working-with-data-crud-operations\"\u003e\u003c/a\u003e\u003c/h2\u003e\n\u003cp\u003e\u003cstrong\u003eCRUD = Create, Read, Update, Delete\u003c/strong\u003e\u003c/p\u003e\n\u003ch3 id=\"create\"\u003eCreate\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#create\"\u003e\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003eCreate a database\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eCREATE DATABASE big_company;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eCreate a table\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eCREATE TABLE employees (\n    employee_id INT AUTO_INCREMENT,\n    name VARCHAR(100) NOT NULL,\n    team_id INT NOT NULL,\n    PRIMARY KEY(employee_id)\n);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eCreate a record in a table\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eINSERT INTO employees (name, team_id) VALUES ('Bob', 25);\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"read\"\u003eRead\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#read\"\u003e\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003eSelect all items from a table (\u003cem\u003eread\u003c/em\u003e)\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSELECT * FROM employees;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eSelect specific columns\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSELECT name FROM employees;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eSelect records that meet a certain condition\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSELECT * FROM employees WHERE name = 'Bob';\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cem\u003eNote:\u003c/em\u003e Just because we are using \u003ccode\u003eWHERE\u003c/code\u003e with a specific column, doesn't mean we have to \u003ccode\u003eSELECT\u003c/code\u003e that column. For instance, if I wanted to know which teams had an employee named \"Bob\", I could do this:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSELECT team_id FROM employees WHERE name = 'Bob' ;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cem\u003eNote:\u003c/em\u003e By default, string comparisons are \u003cem\u003ecase insensitive\u003c/em\u003e in MySQL. \u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eSelect records where one column's value matches the value of another column\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSELECT * FROM employees where team_id = employee_id;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eRename one or more columns using \u003ccode\u003eAS\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSELECT employee_id AS id, name FROM employees; \n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"update\"\u003eUpdate\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#update\"\u003e\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003eUpdate an existing row in a table\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eUPDATE employees SET name = 'Other Bob' WHERE employee_id = 1;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eUpdate a single column for all rows at once\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eUPDATE employees SET name = 'Whatever';\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eUpdate multiple columns for all rows at once\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eUPDATE employees SET name = 'Whatever', team_id = 0;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eDelete one row\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eDELETE FROM employees WHERE employee_id = 1;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eDelete one or more rows that match a pattern\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eDELETE FROM employees WHERE name = 'Whatever';\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eDelete \u003cem\u003eall\u003c/em\u003e rows\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eDELETE FROM employees;\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2 id=\"section-3-working-with-string-functions\"\u003eSection 3: Working with string functions\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#section-3-working-with-string-functions\"\u003e\u003c/a\u003e\u003c/h2\u003e\n\u003cp\u003e\u003cstrong\u003eConcatenate arbitrary strings\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSELECT CONCAT('h', 'e', 'l', 'l', 'o');\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eConcatenate string data from from two columns in a table\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSELECT CONCAT (first_name, ' ', last_name) FROM friends;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eConcatenate and rename the output\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSELECT CONCAT (first_name, ' ', last_name) AS full_name FROM friends ;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eConcatenate with a separator between each item\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSELECT CONCAT_WS (' ', first_name, last_name) AS full_name FROM friends ;\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"the-substring-function\"\u003eThe \u003ccode\u003eSUBSTRING\u003c/code\u003e Function\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#the-substring-function\"\u003e\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e\u003ccode\u003eSUBSTRING\u003c/code\u003e is a cool little function that lets you select a portion of a string. \u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eSelect 4 characters, starting from index 1 (the first character)\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSELECT SUBSTRING('Hey there friends', 1, 4);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eNote:\u003c/strong\u003e The command above will print out \u003ccode\u003eHey \u003c/code\u003e, which appears to be 3 characters but is actually four (remember there's a space after the \u003ccode\u003ey\u003c/code\u003e!)\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eSelect all characters from position 5 to the end of the string\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSELECT SUBSTRING('Hey there friends', 5);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eNote:\u003c/strong\u003e This will print \u003ccode\u003ethere friends\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eSelect the \u003cem\u003elast\u003c/em\u003e three characters in a string\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSELECT SUBSTRING('Hey there friends', -3);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eNote:\u003c/strong\u003e This will print \u003ccode\u003ends\u003c/code\u003e\u003c/p\u003e\n\u003ch3 id=\"combining-substring-with-concat\"\u003eCombining \u003ccode\u003eSUBSTRING\u003c/code\u003e with \u003ccode\u003eCONCAT\u003c/code\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#combining-substring-with-concat\"\u003e\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003eComing soon!\u003c/p\u003e","noteIndex":{"id":"9qx3z8b2wfr5chnnb949zv2","title":"Coding Notes","desc":"Notes on writing, fixing, optimizing, and managing code","updated":1713239898794,"created":1710404034956,"custom":{"nav_order":0,"permalink":"/"},"fname":"root","type":"note","vault":{"fsPath":".","selfContained":true,"name":"coding-notes"},"contentHash":"343469aff8d1dd850480e3be33dce7c1","links":[],"anchors":{},"children":["z1cgzhp9dn5hy47dl69sgwr","zrzuso1wjne88yp1b9wtm8v","e1efo5mvaktzbf53sksb0k0","xk249rrm3kfwe5twpc1ouak","2oo9jjnro6kp9228ryfqdgw"],"parent":null,"data":{},"body":"\nWelcome! I keep all my coding notes here. Anything I learn about writing code, testing code, updating code, or optimizing code will go here.\n\nCheck back from time to time for updates. \n"},"collectionChildren":null,"customHeadContent":null,"config":{"version":5,"dev":{"enablePreviewV2":true,"enableSelfContainedVaults":true},"commands":{"lookup":{"note":{"selectionMode":"extract","confirmVaultOnCreate":true,"vaultSelectionModeOnCreate":"smart","leaveTrace":false,"bubbleUpCreateNew":true,"fuzzThreshold":0.2}},"randomNote":{},"insertNoteLink":{"aliasMode":"none","enableMultiSelect":false},"insertNoteIndex":{"enableMarker":false},"copyNoteLink":{"aliasMode":"title"},"templateHierarchy":"template"},"workspace":{"vaults":[{"fsPath":".","selfContained":true,"name":"coding-notes"}],"journal":{"dailyDomain":"daily","name":"journal","dateFormat":"y.MM.dd","addBehavior":"childOfDomain"},"scratch":{"name":"scratch","dateFormat":"y.MM.dd.HHmmss","addBehavior":"asOwnDomain"},"task":{"name":"task","dateFormat":"y.MM.dd","addBehavior":"asOwnDomain","statusSymbols":{"":" ","wip":"w","done":"x","assigned":"a","moved":"m","blocked":"b","delegated":"l","dropped":"d","pending":"y"},"taskCompleteStatus":["done","x"],"prioritySymbols":{"H":"high","M":"medium","L":"low"},"todoIntegration":false,"createTaskSelectionType":"selection2link"},"graph":{"zoomSpeed":1,"createStub":false},"enableAutoCreateOnDefinition":false,"enableXVaultWikiLink":false,"enableRemoteVaultInit":true,"enableUserTags":true,"enableHashTags":true,"workspaceVaultSyncMode":"noCommit","enableAutoFoldFrontmatter":false,"enableEditorDecorations":true,"maxPreviewsCached":10,"maxNoteLength":204800,"enableFullHierarchyNoteTitle":false,"enablePersistentHistory":false},"preview":{"enableFMTitle":true,"enableNoteTitleForLink":true,"enableFrontmatterTags":true,"enableHashesForFMTags":false,"enablePrettyRefs":true,"enableKatex":true,"automaticallyShowPreview":false},"publishing":{"enableFMTitle":true,"enableNoteTitleForLink":true,"enablePrettyRefs":true,"enableKatex":true,"copyAssets":true,"siteHierarchies":["root"],"writeStubs":false,"siteRootDir":"docs","seo":{"title":"Dendron","description":"Personal Knowledge Space"},"github":{"enableEditLink":true,"editLinkText":"Edit this page on GitHub","editBranch":"main","editViewMode":"tree"},"enableSiteLastModified":true,"enableFrontmatterTags":true,"enableHashesForFMTags":false,"enableRandomlyColoredTags":true,"enableTaskNotes":true,"enablePrettyLinks":true,"searchMode":"search","siteUrl":"https://jeremypedersen.github.io","assetsPrefix":"/coding-notes","siteFaviconPath":"favicon.ico","siteIndex":"root"}}},"__N_SSG":true},"page":"/notes/[id]","query":{"id":"kam10ex48ihweawrhzq1ilw"},"buildId":"jdQmoR0T7zxn3zBS6JrtA","assetPrefix":"/coding-notes","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>

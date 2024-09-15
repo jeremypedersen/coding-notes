@@ -1,0 +1,226 @@
+{
+  "roots": [
+    {
+      "key": "z1cgzhp9dn5hy47dl69sgwr",
+      "title": "AI Notes",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "coding-notes",
+      "children": [
+        {
+          "key": "f35m8ieu2pbn12jkz62j3nd",
+          "title": "AI Background Knowledge",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "coding-notes",
+          "children": []
+        },
+        {
+          "key": "x8jpwbeoqnnfm675507a1iz",
+          "title": "AI Demos",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "coding-notes",
+          "children": []
+        },
+        {
+          "key": "po2goya241g1o2gv7vy4iqy",
+          "title": "HuggingFace",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "coding-notes",
+          "children": []
+        },
+        {
+          "key": "za5or2c8fg13zcu51gxpcqs",
+          "title": "Optimization",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "coding-notes",
+          "children": [
+            {
+              "key": "5bixl6kw3cmj3ec9zuvxi1e",
+              "title": "Hardware",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "coding-notes",
+              "children": [
+                {
+                  "key": "2ka8m9fs91h5ucy4t6hpmt0",
+                  "title": "Cloud Hardware",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "coding-notes",
+                  "children": [
+                    {
+                      "key": "yqa165ncnezvi0iuv6xi193",
+                      "title": "Amazon AWS",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "coding-notes",
+                      "children": []
+                    },
+                    {
+                      "key": "3yu0586pmus823xqn7qln9h",
+                      "title": "Microsoft Azure",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "coding-notes",
+                      "children": []
+                    },
+                    {
+                      "key": "lwczcb6ygp92cmni0hwdzap",
+                      "title": "GCP (Google Cloud)",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "coding-notes",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "key": "2ek1mpitgig2l85uo2kyida",
+              "title": "Profiling",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "coding-notes",
+              "children": []
+            },
+            {
+              "key": "2cu9kgr61gspzceyaodfek0",
+              "title": "Optimization Techniques",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "coding-notes",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "jmtzet0n3e0h2qul117oyuf",
+          "title": "Prompting",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "coding-notes",
+          "children": [
+            {
+              "key": "re9huq8oxr122kob0etdd6z",
+              "title": "LLMs",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "coding-notes",
+              "children": [
+                {
+                  "key": "qtq92f3bsp0mds91svqsxnx",
+                  "title": "Prompt Engineering: Generic Notes",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "coding-notes",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "zrzuso1wjne88yp1b9wtm8v",
+      "title": "Computer Vision",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "coding-notes",
+      "children": []
+    },
+    {
+      "key": "e1efo5mvaktzbf53sksb0k0",
+      "title": "Digital Music",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "coding-notes",
+      "children": []
+    },
+    {
+      "key": "xk249rrm3kfwe5twpc1ouak",
+      "title": "SQL Notes",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "coding-notes",
+      "children": [
+        {
+          "key": "kam10ex48ihweawrhzq1ilw",
+          "title": "MySQL Usage",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "coding-notes",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "2oo9jjnro6kp9228ryfqdgw",
+      "title": "Web Programming",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "coding-notes",
+      "children": [
+        {
+          "key": "xw2ubfqrjrxyhf1pwboa7ql",
+          "title": "Web Programming Basics",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "coding-notes",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "child2parent": {
+    "z1cgzhp9dn5hy47dl69sgwr": null,
+    "f35m8ieu2pbn12jkz62j3nd": "z1cgzhp9dn5hy47dl69sgwr",
+    "x8jpwbeoqnnfm675507a1iz": "z1cgzhp9dn5hy47dl69sgwr",
+    "po2goya241g1o2gv7vy4iqy": "z1cgzhp9dn5hy47dl69sgwr",
+    "za5or2c8fg13zcu51gxpcqs": "z1cgzhp9dn5hy47dl69sgwr",
+    "5bixl6kw3cmj3ec9zuvxi1e": "za5or2c8fg13zcu51gxpcqs",
+    "2ka8m9fs91h5ucy4t6hpmt0": "5bixl6kw3cmj3ec9zuvxi1e",
+    "yqa165ncnezvi0iuv6xi193": "2ka8m9fs91h5ucy4t6hpmt0",
+    "3yu0586pmus823xqn7qln9h": "2ka8m9fs91h5ucy4t6hpmt0",
+    "lwczcb6ygp92cmni0hwdzap": "2ka8m9fs91h5ucy4t6hpmt0",
+    "2ek1mpitgig2l85uo2kyida": "za5or2c8fg13zcu51gxpcqs",
+    "2cu9kgr61gspzceyaodfek0": "za5or2c8fg13zcu51gxpcqs",
+    "jmtzet0n3e0h2qul117oyuf": "z1cgzhp9dn5hy47dl69sgwr",
+    "re9huq8oxr122kob0etdd6z": "jmtzet0n3e0h2qul117oyuf",
+    "qtq92f3bsp0mds91svqsxnx": "re9huq8oxr122kob0etdd6z",
+    "zrzuso1wjne88yp1b9wtm8v": null,
+    "e1efo5mvaktzbf53sksb0k0": null,
+    "xk249rrm3kfwe5twpc1ouak": null,
+    "kam10ex48ihweawrhzq1ilw": "xk249rrm3kfwe5twpc1ouak",
+    "2oo9jjnro6kp9228ryfqdgw": null,
+    "xw2ubfqrjrxyhf1pwboa7ql": "2oo9jjnro6kp9228ryfqdgw"
+  },
+  "notesLabelById": {
+    "z1cgzhp9dn5hy47dl69sgwr": "AI Notes",
+    "f35m8ieu2pbn12jkz62j3nd": "AI Background Knowledge",
+    "x8jpwbeoqnnfm675507a1iz": "AI Demos",
+    "po2goya241g1o2gv7vy4iqy": "HuggingFace",
+    "za5or2c8fg13zcu51gxpcqs": "Optimization",
+    "5bixl6kw3cmj3ec9zuvxi1e": "Hardware",
+    "2ka8m9fs91h5ucy4t6hpmt0": "Cloud Hardware",
+    "yqa165ncnezvi0iuv6xi193": "Amazon AWS",
+    "3yu0586pmus823xqn7qln9h": "Microsoft Azure",
+    "lwczcb6ygp92cmni0hwdzap": "GCP (Google Cloud)",
+    "2ek1mpitgig2l85uo2kyida": "Profiling",
+    "2cu9kgr61gspzceyaodfek0": "Optimization Techniques",
+    "jmtzet0n3e0h2qul117oyuf": "Prompting",
+    "re9huq8oxr122kob0etdd6z": "LLMs",
+    "qtq92f3bsp0mds91svqsxnx": "Prompt Engineering: Generic Notes",
+    "zrzuso1wjne88yp1b9wtm8v": "Computer Vision",
+    "e1efo5mvaktzbf53sksb0k0": "Digital Music",
+    "xk249rrm3kfwe5twpc1ouak": "SQL Notes",
+    "kam10ex48ihweawrhzq1ilw": "MySQL Usage",
+    "2oo9jjnro6kp9228ryfqdgw": "Web Programming",
+    "xw2ubfqrjrxyhf1pwboa7ql": "Web Programming Basics"
+  }
+}
