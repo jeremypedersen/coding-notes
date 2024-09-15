@@ -1,14 +1,16 @@
 ---
 id: zrzuso1wjne88yp1b9wtm8v
-title: 'Computer Vision'
-desc: 'Computer Vision'
-updated: 1725517663182
+title: Computer Vision
+desc: Computer Vision
+updated: 1726419927343
 created: 1725513444786
 ---
 
 Resources related to computer vision. For me this means everything from image processing to stitching panoramas to photogrammetry and even creating and editing NeRF models. 
 
 For now it's just sort of a brain dump where I collect tools I want to play with. Here are a few I'm researching now.
+
+Right now the focus is mostly on traditional CV. Things that are more obviously AI driven like text-to-image models will go into the `ai.` notes tree. 
 
 ## Focus stacking
 
